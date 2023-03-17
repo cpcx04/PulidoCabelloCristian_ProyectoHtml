@@ -11,184 +11,48 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <link rel="icon" href="../img/DJ-Logo-Transparent-PNG.png">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link rel="icon" href="../img/DJ-Logo-Transparent-PNG.png">
     <link rel="stylesheet" href="/html/menuPrincipal.css">
 
 </head>
 
 <body>
+    <!-- The scrollable area -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#myPage">CurroRuiz Deejay</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#myPage">HOME</a></li>
-                        <li><a href="../html/portada.html">SIGN OUT</a></li>
-                        <li><a href="#tour">PLAYLIST</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../html/tiendaOnline.html"> Merchandising</a></li>
-                                <li><a href="#">Extras</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="../img/Carrusel1.jpeg" alt="New York">
-                    <div class="carousel-caption">
-                        <h3>Valencia</h3>
-                        <p>Fiesta Privada Carlos Soler.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="../img/carrusel2.jpeg" alt="Chicago">
-                    <div class="carousel-caption">
-                        <h3>Madrid</h3>
-                        <p>Cumpleaños de Modric.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="../img/FotoPortada.PNG" alt="Los Angeles">
-                    <div class="carousel-caption">
-                        <h3>Belgica</h3>
-                        <p>Tomorrowland</p>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    ...
+      <ul class="navbar-nav">
+        <li><a href="#section1">Section 1</a></li>
+        ...
+    </nav>
+    
+    <!-- Section 1 -->
+    <div id="section1">
+      <h1>Section 1</h1>
+      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+    </div>
+    ...
+    
+    </body>
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Heading</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
         </div>
-
-        x
-        <div id="band" class="container text-center">
-            <h3>CURRO RUIZ</h3>
-            <p><em>Baby don´t Stop the Music</em></p>
-            <p>Hemos ampliado nuestros limites de la música creando una compañia completa para deejays que desean
-                empezar de cero en esto de las mezclas, aqui encontraras todo lo necesario para que se sobre informacion
-                sobre el negocio espero que disfrutes como lo hemos hecho nosotros tantos años en tantos lugares
-                diferentes, recuerda los limites los pones tu!!</p>
-            <br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <p class="text-center"><strong>Curro</strong></p><br>
-                    <a href="#demo" data-toggle="collapse">
-                        <img src="../img/currito.jpeg" class="img-circle person" alt="Random Name" width="255"
-                            height="255">
-                    </a>
-                    <div id="demo" class="collapse">
-                        <p>Deejay y Creador de Contenido</p>
-                        <p> Tech House,Reagge,Pop</p>
-                        <p>Deejay desde 2019</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center"><strong>David Guetta</strong></p><br>
-                    <a href="#demo2" data-toggle="collapse">
-                        <img src="../img/davidGuetta.jpg" class="img-circle person" alt="Random Name" width="255"
-                            height="255">
-                    </a>
-                    <div id="demo2" class="collapse">
-                        <p>Producto y Deejay</p>
-                        <p>El mejor en lo suyo</p>
-                        <p>"La compañia de Curro Deejay es la mejor inversion para empezar"</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center"><strong>Alvama Ice</strong></p><br>
-                    <a href="#demo3" data-toggle="collapse">
-                        <img src="../img/alvama.jpg" class="img-circle person" alt="Random Name" width="255"
-                            height="255">
-                    </a>
-                    <div id="demo3" class="collapse">
-                        <p>Deejay</p>
-                        <p>Reaggeton</p>
-                        <p>Can´t Hold Us x Dakiti (Mashup)</p>
-                    </div>
-                </div>
-            </div>
+        <div class="offcanvas-body">
+            <p>Home.</p>
+            <p>Playlist.</p>
+            <button class="btn btn-secondary" type="button">Sign Out</button>
         </div>
+    </div>
 
-
-        <div class="bg-1">
-            <div class="container">
-                <h3 class="text-center">Fechas</h3>
-                <p class="text-center">¿Donde encontrar a estos máquinas?<br>Compra tus tickets!</p>
-                <ul class="list-group">
-                    <li class="list-group-item">Septiembre <span class="label label-danger">Sold Out!</span></li>
-                    <li class="list-group-item">Octubre <span class="label label-danger">Sold Out!</span></li>
-                    <li class="list-group-item">Noviembre <span class="badge">3</span></li>
-                </ul>
-
-                <div class="row text-center">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="../img/francia.webp" alt="Paris" width="400" height="300">
-                            <p><strong>Paris</strong></p>
-                            <p>Viernes 27 Noviembre 2023</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Tickets</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="../img/nY.jpg" alt="New York" width="400" height="300">
-                            <p><strong>New York</strong></p>
-                            <p>Sabado 28 Noviembre 2023</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Tickets</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <img src="../img/sanFran.webp" alt="San Francisco" width="400" height="300">
-                            <p><strong>San Francisco</strong></p>
-                            <p>Domingo 29 Noviembre 2023</p>
-                            <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Tickets</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-
+    <!-- Button to open the offcanvas sidebar -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Menu
+    </button>
+    <!--
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">×</button>
@@ -285,12 +149,8 @@
 
             <footer class="text-center">
         </div>
-        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a><br><br>
-        <p>Pagina Web creada por Cristian Pulido Cabello</p>
-        </footer>
-    </body>
+        -->
+</body>
 
 </html>
 
