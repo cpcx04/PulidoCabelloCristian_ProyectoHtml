@@ -12,148 +12,209 @@
         crossorigin="anonymous"></script>
     <link rel="icon" href="../img/DJ-Logo-Transparent-PNG.png">
     <link rel="icon" href="../img/DJ-Logo-Transparent-PNG.png">
-    <link rel="stylesheet" href="/html/menuPrincipal.css">
 
 </head>
+<style>
+    .fondo1 {
+        background-image: url(../img/Carrusel1.jpeg);
+    }
+
+    .color1 {
+        color: black;
+    }
+
+    .posicion_img {
+        background-size: cover;
+    }
+</style>
 
 <body>
-    <!-- The scrollable area -->
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    ...
-      <ul class="navbar-nav">
-        <li><a href="#section1">Section 1</a></li>
-        ...
-    </nav>
-    
-    <!-- Section 1 -->
-    <div id="section1">
-      <h1>Section 1</h1>
-      <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../html/menuPrincipal.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="../html/portada.html" class="nav-link px-2 text-white">Sign Out</a></a></li>
+                    <li><a href="../html/tiendaOnline.html" class="nav-link px-2 text-white">Tienda Online</a></a></li>
+                    <li><a href="../html/crearCuenta.html" class="nav-link px-2 text-white">Nueva Cuenta</a></a></li>
+                    <li><a href="../html/extras.html" class="nav-link px-2 text-white">Extras</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-item-start">
+                <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" background-image="../img/Carrusel1.jpeg"
+                    alt="cuurro">
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Curro Ruiz Deejay</h1>
+                        <p>Deejay por pasión.</p>
+                        <p><a class="btn btn-lg btn-primary" href="../html/extras.html">Ver Deejay</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-next carousel-item-start">
+                <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Martin Garrix</h1>
+                        <p>Veterano en el mundo.</p>
+                        <p><a class="btn btn-lg btn-primary" href="../html/extras.html">Ver Martin Garrix</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Empresa Top 1 Mundial de Deejays.</h1>
+                        <p><a class="btn btn-lg btn-primary" href="../html/extras.html">ver galeria completa</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    ...
-    
-    </body>
-    <div class="offcanvas offcanvas-start" id="demo">
-        <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Heading</h1>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p>Home.</p>
-            <p>Playlist.</p>
-            <button class="btn btn-secondary" type="button">Sign Out</button>
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Deejays en Nómina</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('../img/garrix2.jpg'); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold color1">Martin Garrix,ídolo de Masas</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="../img/DJ-Logo-Transparent-PNG.png" alt="Logo" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Tomorrowland</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>2015</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('../img/lesCastizos2.png'); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Les Castizos
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="../img/DJ-Logo-Transparent-PNG.png" alt="Logo" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Rebels</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>2023</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('../img/James-Hype2.jpg'); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold color1">James-Hype</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="../img/DJ-Logo-Transparent-PNG.png" alt="Logo" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Tomorrowland</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>202....</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Button to open the offcanvas sidebar -->
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-        Menu
-    </button>
-    <!--
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">×</button>
-                            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets,
-                                        23€ por persona</label>
-                                    <input type="number" class="form-control" id="psw" placeholder="Cuantos?" min="1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Enviar por
-                                        email</label>
-                                    <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                                </div>
-                                <button type="submit" class="btn btn-block">Pagar
-                                    <span class="glyphicon glyphicon-ok"></span>
-                                </button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                                <span class="glyphicon glyphicon-remove"></span> Cancelar
-                            </button>
-                            <p>Need <a href="#">help?</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="container">
-            <h3 class="text-center">Contactanos</h3>
-            <p class="text-center"><em>No te averguences de preguntar lo que sea!</em></p>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <p>Fan? Dejanos tu critica.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span>Sevilla, ES</p>
-                    <p><span class="glyphicon glyphicon-phone"></span>Numero: +34 657 77 45 33</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span>gmail: deejaysCompany@gmail.com</p>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"
-                                required>
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
-                        rows="5"></textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <button class="btn pull-right" type="submit">Send</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h3 class="text-center">Comentarios</h3>
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Curro</a></li>
-                <li><a data-toggle="tab" href="#menu1">David Guetta</a></li>
-                <li><a data-toggle="tab" href="#menu2">Alvama Ice</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <h2>Curro, Manager</h2>
-                    <p>Mi mayor inspiriacion a día de hoy trabaja con nosotros,persigue tus sueños</p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h2>David Guetta, Famous</h2>
-                    <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?
-                    </p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h2>Alvama Ice, Deejay</h2>
-                    <p>Chacho,esta plataforma es el nuevo Instagram para deejays</p>
-                </div>
-            </div>
-        </div>
-        <div id="tour">
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/album/4BHPugJ7ICjfAHosfafxPQ?utm_source=generator" width="100%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-
-            <footer class="text-center">
-        </div>
-        -->
-</body>
-
-</html>
-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Company Deejays Curro, Inc</p>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sign <output></output></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Tienda Online</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nueva Cuenta</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Extras</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

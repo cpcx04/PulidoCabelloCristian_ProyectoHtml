@@ -12,92 +12,207 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <link rel="icon" href="../img/DJ-Logo-Transparent-PNG.png">
-    <link rel="stylesheet" href="/html/menuPrincipal.css">
 </head>
-<style>
-    .colores {
-        color: black;
-    }
-</style>
 
 <body>
-    <div class="jumbotron store altura">
-        <div class="container text-center">
-            <h1 class="texto">Extras</h1>
-        </div>
-    </div>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">CurroRuiz Deejay</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../html/menuPrincipal.html">HOME</a></li>
-                    <li><a href="../html/portada.html">SIGN OUT</a></li>
-                    <li><a href="#tour">PLAYLIST</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../html/tiendaOnline.html">Merchandising</a></li>
-                            <li><a href="#">Extras</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="../html/menuPrincipal.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="../html/portada.html" class="nav-link px-2 text-white">Sign Out</a></a></li>
+                    <li><a href="../html/tiendaOnline.html" class="nav-link px-2 text-white">Tienda Online</a></a></li>
+                    <li><a href="../html/crearCuenta.html" class="nav-link px-2 text-white">Nueva Cuenta</a></a></li>
+                    <li><a href="../html/extras.html" class="nav-link px-2 text-white">Extras</a></li>
                 </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
             </div>
         </div>
-    </nav>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    </header>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
-            <div class="item active">
-                <img src="../img/garrix.jpg" alt="garrix">
-                <div class="carousel-caption colores">
-                    <h3>Martin garrix</h3>
-                    <p>Icono</p>
+            <div class="carousel-item active">
+                <img src="../img/Carrusel1.jpeg" class="d-block w-100" alt="curro">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">Curro Ruiz Deejay</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">Creador de la Compañia.</p>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="../img/lesCastizos.png" alt="lesCastizos">
-                <div class="carousel-caption colores">
-                    <h3>Les Castizos</h3>
-                    <p>La Nueva Era</p>
+            <div class="carousel-item">
+                <img src="../img/carrusel2.jpeg" class="d-block w-100" alt="curro2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">Curro Ruiz Deejay</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">Creador de la Compañia.</p>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="../img/James-Hype.jpg" alt="James-Hype">
-                <div class="carousel-caption colores">
-                    <h3>James-Hype</h3>
-                    <p>Dios del Tech</p>
+            <div class="carousel-item">
+                <img src="../img/lesCastizos.png" class="d-block w-100" alt="lesCastizos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">Les Castizos</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">Marcan Tendencia allí a donde van.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/garrix.jpg" class="d-block w-100" alt="garrix">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">Martin Garrix</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">No solo es conocido por su Belleza.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/davidGuetta2.jpg" class="d-block w-100" alt="guetta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">David Guetta</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">Tiene en su mano a toda Ibiza.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/gordo.jpg" class="d-block w-100" alt="gordo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="text-shadow: 1px 1px 2px black;">Gordo</h5>
+                    <p style="text-shadow: 1px 1px 2px black;">Futuro y presente de los deejays.</p>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="album py-5 bg-light">
+        <div class="container">
 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/alvama.jpg);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">¡Aplausos para el maestro de los beats! Prepárate para moverte con el
+                                increíble DJ Alvama Ice.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/djSnake.jpg);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">Todos, levanten sus manos y griten de emoción para dar la bienvenida al
+                                incomparable DJ Snake</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/bep.jpg);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">Estamos a punto de experimentar una noche épica gracias al increíble
+                                talento del DJ Black Eyed Peas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/magan.webp);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">¡Que comience la fiesta! Les presento al legendario DJ Juan Magan en la
+                                casa.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/marshmellou.jpg);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">¿Están listos para una noche inolvidable? ¡Den la bienvenida al maestro
+                                de la música, DJ Marshmellouw!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                            aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"
+                            style="background-image: url(../img/aioki.jpg);"></svg>
+                        <div class="card-body">
+                            <p class="card-text">Con un sonido que hace vibrar el suelo, les presento al increíble DJ
+                                Steve Aoki que nos hará bailar toda la noche.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
-</html>l
+</html>
